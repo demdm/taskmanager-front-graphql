@@ -1,0 +1,5 @@
+mutation removeTask($id: ID!) {
+    removeTask(id: $id) {
+        id
+    }
+}

@@ -1,0 +1,6 @@
+mutation addTask($task: TaskInput!) {
+    addTask(task: $task) {
+        title
+        description
+    }
+}

@@ -9,13 +9,13 @@ import { Field, Form, Formik } from 'formik';
 import { FormikTextField } from 'formik-office-ui-fabric-react';
 
 // Hooks
-import { useTaskCreator } from './hooks/useTaskCreator';
+import { useTaskCreator } from '../hooks/useTaskCreator';
 
 // Validators
-import { validateInput } from '../../validators/validateInput';
+import { validateInput } from '../../../validators/validateInput';
 
 // Styles
-import styles from './styles.module.scss';
+import styles from '../styles.module.scss';
 
 export const TaskCreator = ({refetch}) => {
   const { createTask, error } = useTaskCreator();
