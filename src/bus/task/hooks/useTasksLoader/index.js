@@ -6,10 +6,11 @@ import { useQuery } from '@apollo/react-hooks';
 const queryTasks = loader('./gql/queryTasksLoader.graphql');
 
 export const useTasksLoader = () => {
-    const { data, error } = useQuery(queryTasks);
+    const { data, refetch, loading } = useQuery(queryTasks);
 
     return {
-        error,
+        refetch,
+        loading,
         tasks: data && data.tasks
     }
 }
